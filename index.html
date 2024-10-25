@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/loginsignup.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="return passwordvalidate(this)" action="http://127.0.0.1:3000/register" method="post">
+            <h1 class="title">Signup</h1>
+            <input class="name" name="name" type="text" placeholder="Enter Name" required>
+            <input class="email" name="emailid" type="email" placeholder="Enter Mail ID" required>
+            <input class="password" name="password" type="password" placeholder="Enter Password (8 Characters)" minlength="8" required>
+            <input class="confirmpassword" name="confirmpassword" type="password" placeholder="Re-Enter Password"
+                required>
+            <button type="submit"><b>Sign up</b></button>
+        </form>
+        <div>
+            <p class="link">If already have account <a class="switch" href="login.html"> Login</a></p>
+        </div>
+    </div>
+    <script src="loginscript.js"></script>
+</body>
+
+</html>
